@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(87, 112, 255);
+}
+.container{
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.40);
+    font-size: 20px;
+    margin: auto;
+    margin-top: 15%;
+    width: 40%;
+    padding: 15px;
+    text-align:justify;
+    background-color: white;
+    border-radius: 10px;
+    height:auto;
+}
+.aboutapp{
+    margin: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:3px;
+    font-size: 18px;
+}
+.mainheading{
+    color: rgb(87, 112, 255);
+    text-align: center;
+    border-radius: 8px;
+    margin: 0;
+    font-size: 27px;
+    padding:2px;
+}
+.inputclass{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+}
+#inputbox{
+    outline: none;
+    border: 1px solid gray;
+    width: 98%;
+    height: 22px;
+}
+#inputbox:active{
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+#checkbtn{
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    height: 26px;
+    background-color: rgb(87, 112, 255);
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+}
+#checkbtn:hover{
+    background-color: rgb(36, 68, 247);
+}
+#checkbtn:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+.outputtext{
+    display: none;
+}
+@media screen and (max-width:600px){
+    .container{
+        /* background-color: tomato;  */
+        width: 50%;
+    }
+}

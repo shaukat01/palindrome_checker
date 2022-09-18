@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaindrome Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="mainheading">Plaindrome Cheacker</h2>
+        <hr style="background-color: rgb(87, 112, 255) ;">
+        <p class="aboutapp">This web-app is use to check plaindrome text given by the user. You are allow to enter any charecter , numbric and symbol Eg. Hello, wow ,1234... etc</p>
+        <div class="inputclass">
+            <input id="inputbox" type="text" placeholder="Enter text or number">
+            <button onclick="isplaindrome(this)" id="checkbtn">Check</button>
+            <h4 style="margin:0 ;margin-top: 10px;"class="outputtext">This given word is plaindrome</h4>
+        </div>
+    </div>
+</body>
+<script>
+    let txt=document.querySelector(".outputtext");
+    function isplaindrome(curr){
+        let name=curr.previousElementSibling.value;
+        let newMsg=document.createElement('h3');
+        let revname= name;
+        if(name==rev(revname)){
+            txt.textContent= `"${name}"  is an plaindrome 😊`;
+            txt.style.color="Green";
+            txt.style.display="block";
+        }
+        else{
+            txt.textContent= `"${name}" is not an plaindrome 🥺`;
+            txt.style.color="red";
+            txt.style.display="block";
+        }
+    }
+    function rev(revname){
+        let str="";
+        for(var i=revname.length-1;i>=0;i--){
+            str+=revname[i];
+        }
+        return str;
+    }
+</script>
+</html>
