@@ -5,7 +5,7 @@
 Netlify
 
 **#Visit & Short URL :**
-https://famous-crepe-aa26ce.netlify.app/
+ https://famous-crepe-aa26ce.netlify.app/
 
 # Demo :
 ![Screenshot (131)](https://github.com/shaukat01/palindrome_checker/assets/86542840/392678bd-d69c-4b3f-8d3d-c036af43aeab)
